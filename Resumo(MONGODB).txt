@@ -1,0 +1,12 @@
+
+O MongoDB é um tipo de banco de dados que guarda suas informações de forma parecida com documentos em vez de tabelas, como acontece em bancos de dados tradicionais. Ele é parte de uma categoria chamada de "NoSQL", o que significa que ele não segue o modelo relacional dos bancos de dados SQL.
+
+O MongoDB é conhecido pela sua flexibilidade. Ele permite que você armazene diferentes tipos de dados juntos, e você não precisa definir uma estrutura rígida antes de começar a usar. Isso é útil em situações onde os requisitos do projeto podem mudar rapidamente.
+
+Outro ponto forte do MongoDB é a escalabilidade. Você pode facilmente distribuir seus dados em diferentes servidores conforme sua aplicação cresce, o que o torna uma escolha popular para aplicações web e móveis que precisam lidar com uma grande quantidade de dados e usuários.
+
+Ele também é bastante utilizado em situações onde é necessário processar grandes volumes de dados de maneira rápida, já que possui recursos avançados de consulta e indexação.
+
+Em resumo, o MongoDB é uma opção poderosa para quem precisa de um banco de dados flexível, escalável e capaz de lidar com uma grande variedade de dados em constante evolução.
+
+

@@ -1,0 +1,56 @@
+
+Funcionamento do Campeonato Brasileiro de Futebol (Brasileirão)
+O Brasileirão, realizado anualmente desde 1959, é a principal competição de futebol do Brasil. Nele, 20 clubes se enfrentam em um sistema de pontos corridos, onde cada equipe joga duas vezes contra as demais (turno e returno).
+
+Sistema de Pontuação:
+
+Vitória: 3 pontos
+Empate: 1 ponto
+Derrota: 0 pontos
+Critérios de Desempate:
+
+Mais vitórias
+Melhor saldo de gols (gols marcados - gols sofridos)
+Mais gols marcados
+Confronto direto (resultado dos jogos entre os times em disputa)
+Menos cartões vermelhos
+Menos cartões amarelos
+Sorteio
+Ao final das 38 rodadas:
+
+O time com mais pontos é o campeão.
+Os quatro últimos colocados são rebaixados para a Série B.
+O campeão e o vice-campeão se classificam para a Copa Libertadores da América.
+O terceiro e quarto colocados se classificam para a Copa Sul-Americana.
+O quinto e sexto colocados se classificam para a Copa do Brasil do ano seguinte.
+Observações:
+
+O Brasileirão é organizado pela Confederação Brasileira de Futebol (CBF).
+A temporada do Brasileirão geralmente vai de maio a dezembro.
+
+
+ID: Identificador único para cada entrada de dados.
+
+Ano: O ano em que ocorreu o campeonato.
+
+Colocações: A posição final do time no campeonato.
+
+Cod_time: O código identificador do time.
+
+Times: O nome do time.
+
+Pontos: A quantidade de pontos acumulados pelo time durante o campeonato.
+
+Partidas: O número total de partidas jogadas pelo time.
+
+Vitórias: O número de partidas vencidas pelo time.
+
+Empates: O número de partidas empatadas pelo time.
+
+Derrotas: O número de partidas perdidas pelo time.
+
+Gols_feitos: O total de gols marcados pelo time durante o campeonato.
+
+Gols_recebidos: O total de gols sofridos pelo time durante o campeonato.
+
+Diferença de gols: A diferença entre gols marcados e gols sofridos pelo time.

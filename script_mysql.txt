@@ -1,0 +1,61 @@
+ --Criar database--
+
+CREATE DATABASE brasileirao;
+
+ --Use dababase--
+
+USE brasileirao;
+
+ --Criação das tabelas com os parametros--
+
+CREATE TABLE temporadas (
+ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ano_temporada INT
+) ENGINE = InnoDB;
+
+
+CREATE TABLE clubes (
+ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nome_clube VARCHAR(30),
+codigo_clube VARCHAR(3)
+) ENGINE = InnoDB;
+
+
+CREATE TABLE estatisticas (
+    ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    ID_temporada INT,
+    ID_clube INT,
+    colocacao INT,
+    vitorias INT,
+    empates INT,
+    derrotas INT,
+    total_pontos INT,
+    gols_marcados INT,
+    gols_sofridos INT,
+    gols_diferenca INT,
+    total_partidas INT,
+    FOREIGN KEY (ID_temporada)
+        REFERENCES temporadas (ID),
+        FOREIGN KEY (ID_clube)
+        REFERENCES clubes (ID)
+) ENGINE = InnoDB;
+
+ --Importação dos dados já modificados(pelo excel) para a adição ao banco-- 
+
+ --comandos para teste--
+
+ --selecionar todos os dados das tabelas--
+
+select * from temporadas;
+
+select * from clubes;
+
+select * from estatisticas;
+
+ --esse comando vai selecionar os itens da tabela estatistica nas colunas ID_temporada que sejam igual á 14 e os itens da coluna ID_clube igual a 31--
+
+select * from estatisticas where ID_temporada = 14 and ID_clube = 31;
+
+ --Este comando retornará todas as colunas da tabela "estatisticas", incluindo as correspondentes da tabela "clubes", onde houver uma correspondência entre os IDs das duas tabelas. Se não houver correspondência para um registro da tabela "estatisticas", os valores NULL serão inseridos para as colunas da tabela "clubes"--
+
+select * from clubes right join estatisticas on estatisticas.ID_clube = clubes.ID
